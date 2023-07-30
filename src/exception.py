@@ -3,7 +3,7 @@ import os, sys
 class CustomException(Exception):
     def __init__(self, error_message:Exception, error_details: sys):
         self.error_message = CustomException.get_detailed_error_message(error_message = error_message,
-                                                                        error_details = error_detailes)
+                                                                        error_details = error_details)
         
 
     @staticmethod

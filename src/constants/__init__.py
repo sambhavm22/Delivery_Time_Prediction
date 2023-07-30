@@ -4,6 +4,8 @@
 
 #artifacts -> pipeline_folder -> timestamp -> output
 
+#constant file -> configuration file -> data transformation -> utils file -> data transformation
+
 import os, sys
 from datetime import datetime
 
@@ -29,3 +31,11 @@ RAW_DATA_DIR_KEY = 'raw.csv'
 TRAIN_DATA_DIR_KEY = 'train.csv'
 TEST_DATA_DIR_KEY = 'test.csv'
 
+
+#data transformation variables
+DATA_TRANSFORMATION_KEY = 'data_transformation' # this directory will contain two other directory DATA_INGESTION_RAW_DATA_DIR and DATA_INGESTION_INGESTED_DATA_DIR_KEY
+DATA_PREPROCESSOR_DIR = 'processor'
+DATA_TRANSFORMATION_PROCESSING_OBJ = 'processor.pkl'
+DATA_TRANSFORM_DIR = 'transformation'
+TRANSFORM_TRAIN_DIR_KEY = 'train.csv'
+TRANSFORM_TEST_DIR_KEY = 'test.csv'
