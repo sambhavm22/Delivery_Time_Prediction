@@ -6,6 +6,12 @@
 
 #constant file -> configuration file -> data transformation -> utils file -> data transformation
 
+#model training 
+# 1. constant -> Done
+# 2. configuration -> Done
+# 3. model training
+# 4. utils file (helper function)
+
 import os, sys
 from datetime import datetime
 
@@ -39,3 +45,9 @@ DATA_TRANSFORMATION_PROCESSING_OBJ = 'processor.pkl'
 DATA_TRANSFORM_DIR = 'transformation'
 TRANSFORM_TRAIN_DIR_KEY = 'train.csv'
 TRANSFORM_TEST_DIR_KEY = 'test.csv'
+
+#model training variables
+MODEL_TRAINER_KEY = 'model_trainer'
+MODEL_TRAINER_OBJECT = 'model.pkl'
+
+
